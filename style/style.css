@@ -102,6 +102,8 @@ main .boxes_flex_container ul {
 }
 
 main .boxes_flex_container .box {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 1.5rem;
   border-radius: .5rem;
   display: -webkit-box;
@@ -170,6 +172,8 @@ main .boxes_flex_container .box button:hover {
 }
 
 main .boxes_flex_container .big_box {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 1.5rem;
   border-radius: .5rem;
   display: -webkit-box;
