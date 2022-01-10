@@ -18,16 +18,19 @@
         <span>Anually</span>
         <span>
           <label for="toggle"></label>
-          <input type="checkbox" name="toggle" id="toggle">
+          <input type="checkbox" name="toggle" id="toggle" unchecked>
         </span>
         <span>Monthly</span>
       </div>
     </div>
 
-    <section class="boxes_flex_container">
+    <section  id="show" class="boxes_flex_container show_monthly">
       <div class="box">
         <h3>Basic</h3>
-        <p>&dollar;19.99</p>
+        <p>
+          <span class="monthly">&dollar;19.99</span>
+          <span class="anually">&dollar;199.99</span>
+      </p>
         <ul>
           <li>500 GB Storage</li>
           <li>2 Users Allowed</li>
@@ -37,7 +40,10 @@
       </div>
       <div class="big_box">
         <h3>Professional</h3>
-        <p>&dollar;24.99</p>
+        <p>
+          <span class="monthly">&dollar;24.99</span>
+          <span class="anually">&dollar;249.99</span>
+        </p>
         <ul>
           <li>1 TB Storage</li>
           <li>5 Users Allowed</li>
@@ -47,7 +53,10 @@
       </div>
       <div class="box">
         <h3>Master</h3>
-        <p>&dollar;39.99</p>
+        <p>
+          <span class="monthly">&dollar;39.99</span>
+          <span class="anually">&dollar;399.99</span>
+          </p>
         <ul>
           <li>2 TB Storage</li>
           <li>10 Users Allowed</li>
@@ -57,10 +66,6 @@
       </div>
     </section>
   </main>
-  <!-- &dollar;199.99
-  &dollar;249.99
-  &dollar;399.99 -->
-
   <script src="script/script.js"></script>
 </body>
 </html>

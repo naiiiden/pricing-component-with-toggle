@@ -54,6 +54,18 @@ main {
   gap: 2rem;
 }
 
+main .monthly {
+  display: none;
+}
+
+main .show_monthly .monthly {
+  display: block;
+}
+
+main .show_monthly .anually {
+  display: none;
+}
+
 main .text_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,6 +137,7 @@ main .boxes_flex_container .box h3 {
 }
 
 main .boxes_flex_container .box p {
+  text-align: center;
   font-size: 3rem;
   color: #494c5f;
 }
@@ -196,6 +209,7 @@ main .boxes_flex_container .big_box h3 {
 }
 
 main .boxes_flex_container .big_box p {
+  text-align: center;
   font-size: 3rem;
   color: #f6f6fe;
 }

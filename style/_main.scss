@@ -4,6 +4,22 @@ main {
     flex-direction: column;
     gap: 2rem;
 
+    .monthly {
+        display: none;
+    }
+
+    .show_monthly {
+        .monthly {
+            display: block;
+        }
+    }
+
+    .show_monthly {
+        .anually {
+            display: none;
+        }
+    }
+
     .text_wrapper {
         display: flex;
         flex-direction: column;
@@ -49,6 +65,7 @@ main {
             }
 
             p {
+                text-align: center;
                 font-size: 3rem;
                 color: $dark-grayish-blue;
             }
@@ -104,6 +121,7 @@ main {
             }
 
             p {
+                text-align: center;
                 font-size: 3rem;
                 color: $very-light-grayish-blue;
             }
