@@ -2,7 +2,7 @@
 
 // Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
 
-$very-light-grayish-blue: hsl(240, 78%, 98%);
+$very-light-grayish-blue: hsl(240, 80%, 98%);
 $light-grayish-blue: hsl(234, 14%, 74%);
 $grayish-blue: hsl(233, 13%, 49%);
 $dark-grayish-blue: hsl(232, 13%, 33%);
@@ -19,9 +19,26 @@ body {
     position: relative;
     font-family: Montserrat, sans-serif;
     font-size: 15px;
+    background: $very-light-grayish-blue;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    user-select: none;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    user-select: none;
 }

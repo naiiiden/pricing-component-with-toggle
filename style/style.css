@@ -12,10 +12,33 @@ body {
   position: relative;
   font-family: Montserrat, sans-serif;
   font-size: 15px;
+  background: #f6f6fe;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=style.css.map */
