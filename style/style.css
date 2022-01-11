@@ -255,6 +255,67 @@ main .boxes_flex_container .big_box button:hover {
   transition: .3s ease;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#6067e6));
+  background: linear-gradient(#a3a8f0, #6067e6);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bdc1ff), to(#7e85ff));
+  background: linear-gradient(#bdc1ff, #7e85ff);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.75rem;
+  width: 1.75rem;
+  left: .3rem;
+  bottom: .1rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#6067e6));
+  background: linear-gradient(#a3a8f0, #6067e6);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(1.65rem);
+          transform: translateX(1.65rem);
+}
+
+.slider.round {
+  border-radius: 1rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 1024px) {
   main {
     height: 100vh;

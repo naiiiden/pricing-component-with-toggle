@@ -12,9 +12,7 @@ main {
         .monthly {
             display: block;
         }
-    }
-
-    .show_monthly {
+        
         .anually {
             display: none;
         }
@@ -37,7 +35,7 @@ main {
         .anually_monthly_wrapper {
             display: flex;
             align-items: center;
-            gap: 1rem; //CHECK L8
+            gap: 1rem;
         }
     }
 
@@ -164,6 +162,62 @@ main {
     }
 }
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 73%, 64%));
+    transition: .4s;
+
+    &:hover {
+        background: linear-gradient(hsl(236, 100%, 87%),rgb(126, 133, 255));
+    }
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.75rem;
+    width: 1.75rem;
+    left: .3rem;
+    bottom: .1rem;
+    background-color: white;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 73%, 64%));
+}
+  
+  
+input:checked + .slider:before {
+    transform: translateX(1.65rem);
+}
+  
+.slider.round {
+    border-radius: 1rem;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
 @media screen and (min-width: 1024px) {
     main {
         height: 100vh;
@@ -191,3 +245,4 @@ main {
         }
     }
 }
+
