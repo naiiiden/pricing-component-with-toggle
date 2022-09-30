@@ -103,6 +103,7 @@ main {
                 font-family: inherit;
                 background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 73%, 64%));
                 cursor: pointer;
+                border: 1px solid transparent;
 
                 &:hover {
                     border: 1px solid hsl(237, 73%, 64%);
@@ -160,6 +161,7 @@ main {
                 font-family: inherit;
                 background: $very-light-grayish-blue;
                 cursor: pointer;
+                border: 1px solid transparent;
 
                 &:hover {
                     border: 1px solid $very-light-grayish-blue;

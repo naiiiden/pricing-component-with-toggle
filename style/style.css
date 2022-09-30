@@ -131,6 +131,7 @@ main .boxes_flex_container .box button {
   font-family: inherit;
   background: linear-gradient(hsl(236deg, 72%, 79%), hsl(237deg, 73%, 64%));
   cursor: pointer;
+  border: 1px solid transparent;
 }
 main .boxes_flex_container .box button:hover {
   border: 1px solid hsl(237deg, 73%, 64%);
@@ -179,6 +180,7 @@ main .boxes_flex_container .big_box button {
   font-family: inherit;
   background: hsl(240deg, 80%, 98%);
   cursor: pointer;
+  border: 1px solid transparent;
 }
 main .boxes_flex_container .big_box button:hover {
   border: 1px solid hsl(240deg, 80%, 98%);
