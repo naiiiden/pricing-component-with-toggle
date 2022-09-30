@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.5;
 }
 
 body {
@@ -219,7 +220,7 @@ main .boxes_flex_container .big_box button:hover {
   height: 1.75rem;
   width: 1.75rem;
   left: 0.3rem;
-  bottom: 0.1rem;
+  bottom: 0.125rem;
   background-color: white;
   transition: 0.4s;
 }
