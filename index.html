@@ -8,16 +8,16 @@
   <title>Frontend Mentor | [Challenge Name Here]</title>
 </head>
 <body>
-  <img src="images/bg-top.svg" class="top" alt="">
-  <img src="images/bg-bottom.svg" class="bottom" alt="">
   
   <main>
+    <img src="images/bg-top.svg" class="top" alt="">
+    <img src="images/bg-bottom.svg" class="bottom" alt="">
     <div class="text_wrapper">
       <h1>Our Pricing</h1>
       <div class="anually_monthly_wrapper">
         <span>Monthly</span>
-        <label class="switch" for="toggle">
-          <span class="sr-only" aria-live="polite">Monthly pricing</span>
+        <label class="switch" for="toggle" aria-labelledby="pricing">
+          <span class="sr-only" aria-live="polite" id="pricing">Monthly pricing</span>
           <input type="checkbox" name="toggle" id="toggle" unchecked>
           <span class="slider round"></span>
         </label>
