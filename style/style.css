@@ -175,7 +175,7 @@ main .boxes_flex_container .big_box button {
   border-radius: 0.25rem;
   width: 100%;
   padding: 0.5rem;
-  color: hsl(237deg, 73%, 64%);
+  color: #575EE5;
   font-family: inherit;
   background: hsl(240deg, 80%, 98%);
   cursor: pointer;
