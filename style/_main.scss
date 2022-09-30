@@ -1,3 +1,11 @@
+.sr-only {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}
+
 main {
     padding: 1.5rem;
     display: flex;
